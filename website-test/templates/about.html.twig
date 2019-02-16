@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	{% for content in contents %}	
+		<div class="myContainer">
+			<h3>{{content.title}}</h3>
+			<div class="d-inline-block">
+				<span class="about-content">{{content.content}}</span>
+				<img src="/images/{{content.image}}">
+			</div>		
+		</div>
+	{% endfor %}
+	
+{% endblock %}
+
+{% block javascripts %}
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		$('a:contains("About")').css('color', '#000000');
+		});
+	</script>
+{% endblock %}

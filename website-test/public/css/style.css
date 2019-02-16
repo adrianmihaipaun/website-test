@@ -1,0 +1,101 @@
+.carousel-items{
+	height: 400px;
+}
+.homepage-content {
+	padding: 30px 30px 50px 30px;
+	display: inline-block;
+}
+.col-layouts {
+	width: 33.3%;
+	float: left;
+	padding: 10px;
+}
+footer {
+	background-color: #6495ed;
+	color: white;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+}
+.bottom-align{
+	bottom: 0px;
+}
+.carousel-items button {
+	position: relative;
+	display: initial;
+	margin: 80px 0px 0px 130px;
+}
+.carousel-control-next, .carousel-control-prev {
+	width: 3%;
+}
+.carousel-items span {
+	text-align: left;
+	padding: 70px 0px 0px 135px;
+	display: inline-block;
+	color: white;
+	width: 100%;
+}
+body {
+	background-color: #bce8f7;
+}
+.navbar {
+	background-color: #6495ed;
+}
+@media only screen and (max-width: 670px) {
+  .carousel-items span {
+  	padding: 70px 0px 0px 30px;
+  }
+  .carousel-items button {
+  	margin: 80px 0px 0px 32px;
+  }
+}
+a.navbar-brand {
+	margin-left: 20px;
+}
+.hide {
+	display: none;
+}
+.myContainer {
+	width: 100%;
+	padding: 20px;
+}
+.myContainer:nth-child(2), .myContainer:nth-child(4) {
+	background-color: white;
+}
+.d-inline-block {
+	display: inline-block;
+}
+.about-content {
+	display: inherit;
+	float: left;
+	width: 70%;
+}
+.myContainer img {
+	float: right;
+	width: 210px;
+}
+@media only screen and (max-width: 780px) {
+    .myContainer img {
+		float: left;
+	}
+}
+.f-left {
+	float: left;
+}
+form {
+	margin: auto;
+}
+.formular {
+	width: 60%;
+	margin: auto;
+}
+.titlu-contact {
+	text-align: center;
+}
+.titlu-contact  h3 {
+	margin: 20px 0px 20px 0px;
+}
+.formular button {
+	float: right;
+	margin-right: 20px;
+}

@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  		<div class="carousel-inner">
+
+	  		{% for slider in sliders %}				
+				<div class="carousel-item carousel-items {{slider.active}}" style="background: url(/images/{{ slider.photo }})no-repeat; background-size: cover;">
+			    	<span>
+			    		<h3>{{slider.title}}</h3>
+			    		<h5>{{slider.subtitle}}</h5>
+			    	</span>
+			    	<button class="btn btn-primary" onclick="window.location.href='www.symfony.com'">Vezi mai mult</button>
+			    </div>
+			{% endfor %}
+
+		</div>
+	    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    	<span class="sr-only">Previous</span>
+	    </a>
+	    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    	<span class="sr-only">Next</span>
+	    </a>
+	</div>
+
+	<div class="homepage-content">
+		{% for layout in layouts %}	
+			<div class="col-layouts">
+				<h3>{{layout.title}}</h3>
+				<div>{{layout.content}}<span class="hide">{{layout.hiddenContent}}</span></div>
+				<a href="javascript:void(0)" class="link">Citeste mai mult</a>
+				<a href="javascript:void(0)" class="restrange hide">Restrange</a>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+    	$('a.link').click(function(ev){
+    		$(ev.currentTarget).parent().find('span.hide').removeClass('hide');
+    		$(ev.currentTarget).addClass('hide');
+    		$(ev.currentTarget).parent().find('a.restrange').removeClass('hide');
+    	});
+    	$('a.restrange').click(function(ev){
+			$(ev.currentTarget).parent().find('span').addClass('hide');
+    		$(ev.currentTarget).parent().find('a.restrange').addClass('hide');
+    		$(ev.currentTarget).parent().find('a.link').removeClass('hide');	
+		});
+		$('a:contains("Home")').css('color', '#000000');
+	});
+</script>
+
+{% endblock %}
