@@ -1,6 +1,7 @@
 
 .carousel-items{
-	height: 400px;
+	height: 500px;
+    max-width: 100%;
 }
 .homepage-content {
 	padding: 30px 30px 50px 30px;
@@ -41,6 +42,15 @@ body {
 }
 .navbar {
 	background-color: #6495ed;
+	height: 50px;
+}
+.navbar-collapse {
+	z-index: 1;
+	background-color: #6495ed;
+	padding-left: 20px;
+}
+ul.navbar-nav li.nav-item a.nav-link {
+	color: #FFFFFF;
 }
 @media only screen and (max-width: 670px) {
   .carousel-items span {
@@ -78,6 +88,11 @@ a.navbar-brand {
 @media only screen and (max-width: 780px) {
     .myContainer img {
 		float: left;
+	}
+}
+@media only screen and (max-width: 590px) {
+    .col-layouts {
+		width: 100%;
 	}
 }
 .f-left {
