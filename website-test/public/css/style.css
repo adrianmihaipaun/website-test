@@ -35,7 +35,7 @@ footer {
 	padding: 70px 0px 0px 135px;
 	display: inline-block;
 	color: white;
-	width: 100%;
+	width: 100%;	
 }
 body {
 	background-color: #bce8f7;
@@ -124,7 +124,6 @@ form {
     margin-top: 60px;
     font-size: 20px;
     text-align: center;
-    color: #59ce59;
     font-weight: bold;
 }
 .contact-form {
