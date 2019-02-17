@@ -106,14 +106,4 @@ class WebsiteController extends AbstractController
 			'contents' => $contents
 		]);
 	}
-
-	/**
-	*@Route("/contact")
-	*/
-	public function contact()
-	{	
-		return $this->render('contact.html.twig', [
-			'title' => 'Contacteaza-ne'
-		]);
-	}		
 }

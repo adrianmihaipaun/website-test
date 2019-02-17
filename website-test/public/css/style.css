@@ -103,9 +103,16 @@ form {
 .formular .form-group:nth-child(3) {
 	display: inline-block;
 }
-.alert-info{
+.contact-message{
 	width: 50%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
+    font-size: 20px;
     text-align: center;
+    color: #59ce59;
+    font-weight: bold;
+}
+.contact-form {
+	width: 35%;
+    margin: auto;
 }
