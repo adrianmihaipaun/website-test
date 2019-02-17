@@ -10,18 +10,24 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
             <link rel="stylesheet" href="/css/style.css">
-              
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('div.body-container').css('min-height', screen.height+'px');
+                });
+            </script>
         {% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-bg">
-	        <div>
-	            <a class="navbar-brand space-brand" href="/">Home</a>
-	            <a class="navbar-brand space-brand" href="/about">About</a>
-	            <a class="navbar-brand space-brand" href="/contact">Contact</a>
-            </div>
-        </nav>
-        {% block body %}{% endblock %}
+        <div class="body-container">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-bg">
+    	        <div>
+    	            <a class="navbar-brand space-brand" href="/">Home</a>
+    	            <a class="navbar-brand space-brand" href="/about">About</a>
+    	            <a class="navbar-brand space-brand" href="/contact">Contact</a>
+                </div>
+            </nav>
+            {% block body %}{% endblock %}
+        </div>
         <footer class="footer">
             <div class="container text-center">
                 <span><b>This is my website</b></span>

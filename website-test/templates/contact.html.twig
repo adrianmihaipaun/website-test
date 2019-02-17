@@ -14,7 +14,7 @@
 		  </div>
 		  <div class="form-group  col-xs-12 col-sm-12 col-lg-12">
 		    <label for="message">Mesaj:</label>
-	  		<textarea class="form-control" rows="5" id="message"></textarea>
+	  		<textarea class="form-control" rows="5" id="message" required="required"></textarea>
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary">Trimite mesaj</button>
@@ -26,7 +26,15 @@
 {% block javascripts %}
 	<script type="text/javascript">
 		$( document ).ready(function() {
-		$('a:contains("Contact")').css('color', '#000000');
+				
+				$('a:contains("Contact")').css('color', '#000000');
+				// $('button[type="submit"]').click(function(){
+				// 	$('.formular, .titlu-contact').addClass('hide');
+				// 	$('.body-container').html(
+				// 		'<div class="alert alert-info">Mesajul a fost trimis cu succes! </div>'
+				// 		);
+				// });
 		});
+
 	</script>
 {% endblock %}
