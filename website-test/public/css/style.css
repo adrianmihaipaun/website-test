@@ -7,6 +7,10 @@
 	padding: 30px 30px 50px 30px;
 	display: inline-block;
 }
+.body-container {
+	margin-top: 40px;
+	z-index: -1;
+}
 .col-layouts {
 	width: 33.3%;
 	float: left;
@@ -42,15 +46,21 @@ body {
 }
 .navbar {
 	background-color: #6495ed;
-	height: 50px;
+	padding: unset;
+	top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 .navbar-collapse {
 	z-index: 1;
 	background-color: #6495ed;
-	padding-left: 20px;
 }
+
 ul.navbar-nav li.nav-item a.nav-link {
 	color: #FFFFFF;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 @media only screen and (max-width: 670px) {
   .carousel-items span {
